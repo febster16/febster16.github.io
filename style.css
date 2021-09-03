@@ -193,4 +193,12 @@ a {
     transition: 400ms;
 }
 
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: #9e7c7c;
+    }
+}
+
 
