@@ -195,9 +195,152 @@ a {
 
 
 @media screen and (max-width: 600px) {
-    body {
-        background-color: #9e7c7c;
+    header {
+        padding: 8px 0px;
+    }
+
+    .header-container {
+        margin: 0 8px 0 8px;
+    }
+
+    .logo img {
+        width: 120px;
+        padding: 10px;
+    }
+    
+    .navbar-link {
+        padding: 18px 18px 18px 18px;
+    }
+    
+    .navbar-link a{
+        font-size: 12px;
+    }
+    
+    .content {
+        padding: 0 28px;
+    }
+    
+    .content-container {
+        padding-top: 12px;
+    }
+    
+    .about {
+        width: 100%;
+    }
+    
+    .name-container {
+        width: 100%; 
+    }
+    
+    .name {
+        font-size: 18px;
+    }
+    
+    .circle {
+        left: 8px;
+        top: -16px;
+        width: 58px;
+        height: 58px;
+    }
+    
+    .description-container {
+        width: 100%;
+    }
+    
+    .description {
+        color: white;
+        font-size: 24px;
+    }
+    
+    .about-me-container {
+        width: 100%;
+    }
+    
+    .about-me {
+        font-size: 14px;
+        margin: 12px 0 24px 0;
+        text-align: justify;
+    }
+    
+    .about-me a {
+        color: white;
+        text-decoration: underline;
+    }
+    
+    .myPhoto {
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    .mailBtn {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: #B3CCFE;
+        border: none;
+        border-radius: 2px;
+        height: 60px;
+        width: 160px;
+        justify-content: space-around;
+    }
+    
+    .button-row {
+        display: flex;
+        align-items: center;
+    }
+    
+    .button-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 8px;
+    }
+    
+    .mailBtn:hover {
+        opacity: 75%;
+        transition: 400ms;
+    }
+    
+    .social-media {
+        padding-left: 48px;
+    }
+    
+    .social-media a:hover {
+        opacity: 60%;
+        transition: 400ms;
+    }
+    
+    .social-media a {
+        text-decoration: none;
+    }
+    
+    .button-col {
+        display: inline-block;
+        margin-top: 8px;
+    }
+    
+    .download-resume {
+        display: flex;
+        align-items: center;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .download-resume p {
+        text-decoration: none;
+        color: #BFBFBF;
+        font-family: Montserrat;
+        font-size: 14px;
+    }
+    
+    .download-resume:hover {
+        opacity: 60%;
+        transition: 400ms;
     }
 }
+
 
 
