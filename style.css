@@ -301,3 +301,102 @@ a {
 }
 
 
+@media screen and (max-width: 600px) {
+    .landscape-myPhoto {
+        visibility: visible;
+        background-image: url("../assets/myPhotoLandscape.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 428px; 
+        height: 250px;  
+    }
+
+    header {
+        padding: 8px 0px;
+    }
+
+    .header-container {
+        margin: 0 8px 0 8px;
+    }
+
+    .logo img {
+        width: 120px;
+        padding: 10px;
+    }
+    
+    .navbar-link {
+        padding: 18px 18px 18px 18px;
+    }
+    
+    .navbar-link a{
+        font-size: 12px;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 28px;
+    }
+    
+    .content-container {
+        padding-top: 12px;
+    }
+    
+    .about {
+        width: 100%;
+    }
+    
+    .name-container {
+        margin-top: 12px;
+        width: 100%; 
+    }
+    
+    .name {
+        font-size: 18px;
+    }
+    
+    .circle {
+        visibility: hidden;
+    }
+    
+    .description-container {
+        width: 100%;
+    }
+    
+    .description {
+        color: white;
+        font-size: 24px;
+    }
+    
+    .about-me-container {
+        width: 100%;
+    }
+    
+    .about-me {
+        font-size: 14px;
+        margin: 12px 0 24px 0;
+        text-align: justify;
+    }
+    
+    .about-me a {
+        color: white;
+        text-decoration: underline;
+    }
+    
+    .myPhoto {
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    .social-media {
+        padding-left: 28px;
+    }
+    
+    .button-col {
+        display: inline-block;
+        margin-top: 8px;
+    }
+}
+
+
