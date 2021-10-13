@@ -12,7 +12,7 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
-    padding: 18px 0px;
+    padding: 12px 0px;
     z-index: 2;
 }
 
@@ -42,7 +42,7 @@ header {
 }
 
 .navbar-link {
-    padding: 20px 20px 20px 48px;
+    padding: 20px 20px 20px 40px;
 }
 
 .navbar-link a{
@@ -65,7 +65,7 @@ header {
 }
 
 .content-container {
-    padding-top: 58px;
+    padding-top: 80px;
 }
 
 .about {
@@ -139,6 +139,7 @@ header {
     font-weight: bold;
     cursor: pointer;
     background-color: #B3CCFE;
+    color: #201F1F;
     border: none;
     border-radius: 2px;
     height: 60px;
@@ -202,109 +203,208 @@ a {
     transition: 400ms;
 }
 
-@media screen and (max-width: 600px) {
-    .landscape-myPhoto {
-        visibility: visible;
-        background-image: url("../assets/myPhotoLandscape.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 428px; 
-        height: 250px;  
-    }
-
-    header {
-        padding: 8px 0px;
-    }
-
-    .header-container {
-        margin: 0 8px 0 8px;
-    }
-
-    .logo img {
-        width: 120px;
-        padding: 10px;
-    }
-    
-    .navbar-link {
-        padding: 18px 18px 18px 18px;
-    }
-    
-    .navbar-link a{
-        font-size: 12px;
-    }
-    
-    .content {
-        display: flex;
-        flex-direction: column;
-        padding: 0 28px;
-    }
-    
-    .content-container {
-        padding-top: 12px;
-    }
-    
-    .about {
-        width: 100%;
-    }
-    
-    .name-container {
-        margin-top: 12px;
-        width: 100%; 
-    }
-    
-    .name {
-        font-size: 18px;
-    }
-    
-    .circle {
-        visibility: hidden;
-    }
-    
-    .description-container {
-        width: 100%;
-    }
-    
-    .description {
-        color: white;
-        font-size: 24px;
-    }
-    
-    .about-me-container {
-        width: 100%;
-    }
-    
-    .about-me {
-        font-size: 14px;
-        margin: 12px 0 24px 0;
-        text-align: justify;
-    }
-    
-    .about-me a {
-        color: white;
-        text-decoration: underline;
-    }
-    
-    .myPhoto {
-        visibility: hidden;
-        position: absolute;
-    }
-    
-    .social-media {
-        padding-left: 28px;
-    }
-    
-    .button-col {
-        display: inline-block;
-        margin-top: 8px;
-    }
+.project {
+    padding: 0 156px;
+    align-items: center;
+    position: relative;
 }
 
+.project-container{
+    padding-top: 116px;
+}
+
+.project-container h1 {
+    font-family: Amaranth;
+    color: white;
+    font-size: 46px;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-content-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-item {
+    text-align: center;
+    margin: 50px 50px 50px 50px;
+    width: 50%;
+}
+
+.project-header {
+    color: white;
+    font-family: Amaranth;
+    font-size: 24px;
+    margin: 16px 0 8px 0;
+}
+
+.project-subheader {
+    color: #BFBFBF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.project-card {
+    position:relative;
+}
+
+.project-card img {
+    border-radius: 2px;
+    opacity: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: 1s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.project-card:hover img{
+    opacity: 30%;
+}
+
+.project-card:hover .middle {
+    opacity: 100%;
+}
+
+.text a{
+    border: 2px solid #B3CCFE;
+    border-radius: 2px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #B3CCFE;
+    font-size: 14px;
+    padding: 16px 32px;
+    transition: .5s ease;
+}
+
+.text a:hover {
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.329);
+}
+
+.experience {
+    padding: 0 156px;
+    align-items: center;
+    position: relative;
+}
+
+.experience-container{
+    padding-top: 116px;
+    padding-bottom: 116px;
+}
+
+.experience-container h1 {
+    font-family: Amaranth;
+    color: white;
+    font-size: 46px;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.experience-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.experience-item img {
+    background-color: white;
+    width: 150px;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.experience-item {
+    margin: 50px 50px 50px 50px;
+    text-align: center;
+}
+
+.experience-header {
+    color: white;
+    font-family: Amaranth;
+    font-size: 24px;
+    margin: 16px 0 8px 0;
+}
+
+.experience-subheader, .experience-period {
+    color: #BFBFBF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+}
+
+footer {
+    background-color: #111111fa;
+    background-image: url('./assets/footer.png');
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    padding: 85px 156px 85px 156px;
+}
+
+.footer-text h1 {
+    font-family: Amaranth;
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    line-height: 1.3;
+    color: white;
+}
+
+.footer-text p {
+    color: #BFBFBF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.footer-text a {
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: auto;
+    padding: 0 8px;
+}
 
 @media screen and (max-width: 600px) {
     .landscape-myPhoto {
         visibility: visible;
-        background-image: url("../assets/myPhotoLandscape.png");
+        background-image: url("./assets/myPhotoLandscape.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -326,7 +426,7 @@ a {
     }
     
     .navbar-link {
-        padding: 18px 18px 18px 18px;
+        padding: 18px 10px 18px 10px;
     }
     
     .navbar-link a{
@@ -377,6 +477,7 @@ a {
         font-size: 14px;
         margin: 12px 0 24px 0;
         text-align: justify;
+        line-height: 1.5;
     }
     
     .about-me a {
@@ -397,6 +498,98 @@ a {
         display: inline-block;
         margin-top: 8px;
     }
+
+    .project {
+        padding: 0 28px;
+    }
+
+    .project-container h1 {
+        font-size: 24px;
+    }
+    
+    .project-container{
+        padding-top: 80px;
+    }
+    
+    .project-content-row {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .project-item {
+        text-align: center;
+        margin: 32px 8px 8px 8px;
+        width: 100%;
+    }
+    
+    .project-header {
+        color: white;
+        font-family: Amaranth;
+        font-size: 18px;
+        margin: 16px 0 8px 0;
+    }
+    
+    .project-subheader {
+        font-size: 12px;
+        font-weight: 400;
+    }
+    
+    .project-card img {
+        width: 400px;
+    }
+
+
+    .experience {
+        padding: 0 28px;
+    }
+    
+    .experience-container{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+    .experience-container h1 {
+        font-size: 24px;
+    }
+    
+    .experience-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .experience-item {
+        margin: 32px 0 0 0;
+    }
+    
+    .experience-header {
+        font-size: 18px;
+    }
+    
+    .experience-subheader, .experience-period {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 28px 28px;
+    }
+
+    .footer-icon {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+
+    .footer-text h1 {
+        font-size: 20px;
+    }
+    
+    .footer-text p {
+        font-size: 12px; 
+    }
+    
 }
 
 
