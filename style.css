@@ -361,6 +361,8 @@ a {
 footer {
     background-color: #111111fa;
     background-image: url('./assets/footer.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .footer-content {
@@ -401,7 +403,7 @@ footer {
     padding: 0 8px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .landscape-myPhoto {
         visibility: visible;
         background-image: url("./assets/myPhotoLandscape.png");
@@ -568,6 +570,11 @@ footer {
     .experience-subheader, .experience-period {
         font-size: 12px;
         font-weight: 400;
+    }
+    
+    footer {
+        background-position-y: 80px;
+        background-repeat: no-repeat;
     }
 
     .footer-content {
